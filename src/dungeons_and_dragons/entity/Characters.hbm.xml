@@ -1,0 +1,198 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 31, 2017 10:00:34 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="dungeons_and_dragons.entity.Characters" table="Characters" catalog="dungeons_and_dragons" optimistic-lock="version">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="userId" type="java.lang.Integer">
+            <column name="userId" />
+        </property>
+        <property name="level" type="string">
+            <column name="level" />
+        </property>
+        <property name="inspiration" type="string">
+            <column name="inspiration" />
+        </property>
+        <property name="armorClass" type="string">
+            <column name="armorClass" />
+        </property>
+        <property name="initiative" type="string">
+            <column name="initiative" />
+        </property>
+        <property name="speed" type="string">
+            <column name="speed" />
+        </property>
+        <property name="proficiencyBonus" type="string">
+            <column name="proficiencyBonus" />
+        </property>
+        <property name="maxHp" type="string">
+            <column name="maxHp" />
+        </property>
+        <property name="curHp" type="string">
+            <column name="curHp" />
+        </property>
+        <property name="tempHp" type="string">
+            <column name="tempHp" />
+        </property>
+        <property name="xp" type="string">
+            <column name="xp" />
+        </property>
+        <property name="deathSaveSuccess" type="java.lang.Integer">
+            <column name="deathSaveSuccess" />
+        </property>
+        <property name="deathSaveFail" type="java.lang.Integer">
+            <column name="deathSaveFail" />
+        </property>
+        <property name="strength" type="string">
+            <column name="strength" />
+        </property>
+        <property name="dexterity" type="string">
+            <column name="dexterity" />
+        </property>
+        <property name="constitution" type="string">
+            <column name="constitution" />
+        </property>
+        <property name="intelligence" type="string">
+            <column name="intelligence" />
+        </property>
+        <property name="wisdom" type="string">
+            <column name="wisdom" />
+        </property>
+        <property name="charisma" type="string">
+            <column name="charisma" />
+        </property>
+        <property name="strMod" type="string">
+            <column name="strMod" />
+        </property>
+        <property name="dexMod" type="string">
+            <column name="dexMod" />
+        </property>
+        <property name="conMod" type="string">
+            <column name="conMod" />
+        </property>
+        <property name="intMod" type="string">
+            <column name="intMod" />
+        </property>
+        <property name="wisMod" type="string">
+            <column name="wisMod" />
+        </property>
+        <property name="chaMod" type="string">
+            <column name="chaMod" />
+        </property>
+        <property name="strSave" type="string">
+            <column name="strSave" />
+        </property>
+        <property name="dexSave" type="string">
+            <column name="dexSave" />
+        </property>
+        <property name="conSave" type="string">
+            <column name="conSave" />
+        </property>
+        <property name="intSave" type="string">
+            <column name="intSave" />
+        </property>
+        <property name="wisSave" type="string">
+            <column name="wisSave" />
+        </property>
+        <property name="chaSave" type="string">
+            <column name="chaSave" />
+        </property>
+        <property name="class_" type="string">
+            <column name="class_" length="25" />
+        </property>
+        <property name="background" type="string">
+            <column name="background" />
+        </property>
+        <property name="playerName" type="string">
+            <column name="playerName" length="25" />
+        </property>
+        <property name="charName" type="string">
+            <column name="charName" length="25" />
+        </property>
+        <property name="race" type="string">
+            <column name="race" length="15" />
+        </property>
+        <property name="alignment" type="string">
+            <column name="alignment" length="25" />
+        </property>
+        <property name="personalityTraits" type="string">
+            <column name="personalityTraits" />
+        </property>
+        <property name="ideals" type="string">
+            <column name="ideals" />
+        </property>
+        <property name="bonds" type="string">
+            <column name="bonds" />
+        </property>
+        <property name="flaws" type="string">
+            <column name="flaws" />
+        </property>
+        <property name="hitDice" type="string">
+            <column name="hitDice" length="10" />
+        </property>
+        <property name="features" type="string">
+            <column name="features" />
+        </property>
+        <property name="weapon1" type="string">
+            <column name="weapon1" length="25" />
+        </property>
+        <property name="weapon2" type="string">
+            <column name="weapon2" length="25" />
+        </property>
+        <property name="weapon3" type="string">
+            <column name="weapon3" length="25" />
+        </property>
+        <property name="attackBonus1" type="string">
+            <column name="attackBonus1" length="5" />
+        </property>
+        <property name="attackBonus2" type="string">
+            <column name="attackBonus2" length="5" />
+        </property>
+        <property name="attackBonus3" type="string">
+            <column name="attackBonus3" length="5" />
+        </property>
+        <property name="dmgType1" type="string">
+            <column name="dmgType1" length="25" />
+        </property>
+        <property name="dmgType2" type="string">
+            <column name="dmgType2" length="25" />
+        </property>
+        <property name="dmgType3" type="string">
+            <column name="dmgType3" length="25" />
+        </property>
+        <property name="attacks" type="string">
+            <column name="attacks" />
+        </property>
+        <property name="equipment" type="string">
+            <column name="equipment" />
+        </property>
+        <property name="copper" type="string">
+            <column name="copper" length="5" />
+        </property>
+        <property name="silver" type="string">
+            <column name="silver" length="5" />
+        </property>
+        <property name="electrum" type="string">
+            <column name="electrum" length="5" />
+        </property>
+        <property name="gold" type="string">
+            <column name="gold" length="5" />
+        </property>
+        <property name="platinum" type="string">
+            <column name="platinum" length="5" />
+        </property>
+        <property name="passiveWisdom" type="string">
+            <column name="passiveWisdom" length="5" />
+        </property>
+        <property name="language" type="string">
+            <column name="language" />
+        </property>
+        <property name="proficiencies" type="string">
+            <column name="proficiencies" />
+        </property>
+    </class>
+</hibernate-mapping>
